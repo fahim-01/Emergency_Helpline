@@ -23,7 +23,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   margin-left: auto;
-}.nav-Links li a {
+}
+.nav-Links li a {
 color: white;
 text-decoration: none;
 font-size: 16px;
@@ -53,16 +54,16 @@ color: rgb(240, 239, 239);
   position: absolute;
   cursor: pointer;
   right: 5%;
-  top: 50%;
+  top: 0%;
   transform: translate(-5%, -50%);
   z-index: 2;
 
 }  
 .nav-Links {
   position: fixed;
-  background: blue;
-  height: 100%;
-  width: 100%;
+  background: black;
+  height: 1%;
+  width: 1%;
   flex-direction: column;
   clip-path: circle(100px at 90% -10%);
   -webkit-clip-path: circle(100px at 90% -10%);
