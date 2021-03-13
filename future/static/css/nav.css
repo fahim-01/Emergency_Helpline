@@ -61,7 +61,7 @@ color: rgb(240, 239, 239);
 }  
 .nav-Links {
   position: fixed;
-  background: black;
+  background: blue;
   height: 1%;
   width: 1%;
   flex-direction: column;
