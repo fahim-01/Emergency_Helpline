@@ -1,19 +1,7 @@
-<!doctype html>
-<html lang="en">
-  {% load static %}
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Us!</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
-   <script src="https://kit.fontawesome.com/64d58efce2.js"  crossorigin="anonymous"></script>
-  </head>
-  <body>
-
-
+{% extends 'homepage/base.html' %}
+{% block title %} Contact US {% endblock %} 
+{% block body %} 
+{% load static %}
     <div class="container">
       <span class="big-circle"></span>
       <img src='{% static "/media/images/shape.png" %}' class="square" alt="" />
@@ -29,15 +17,15 @@
           <div class="info">
             <div class="information">
               <img src='{% static "/media/images/pin.png" %}' class="icon" alt="" />
-              <p>92 Cherry Drive Uniondale, NY 11553</p>
+              <p>2B Jalalia Box,Akhalia surma,Sylhet.</p>
             </div>
             <div class="information">
               <img src='{% static "/media/images/gmail.png" %}' class="icon" alt="" />
-              <p>lorem@ipsum.com</p>
+              <p>fahim.sust.edu@gmail.com</p>
             </div>
             <div class="information">
               <img src='{% static "/media/images/phone.png" %}'class="icon" alt="" />
-              <p>123-456-789</p>
+              <p>+880 1778346462</p>
             </div>
           </div>
           <div class="social-media">
@@ -64,26 +52,26 @@
           <span class="circle 2"></span>
 
 
-          <form action="contact.html">
+          <form action="/contact/" method="POST"> {% csrf_token %}
             <h3 class="title">Contact us</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input" />
+              <input type="text" id="name" name="name" class="input" />
               <label for="">Username</label>
               <span>Username</span>
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input" />
+              <input type="email" id="email" name="email" class="input" />
               <label for="">Email</label>
               <span>Email</span>
             </div>
             <div class="input-container">
-              <input type="tel" name="phone" class="input" />
+              <input type="tel" id="phone" name="phone" class="input" />
               <label for="">Phone</label>
               <span>Phone</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
-              <label for="">Message</label>
+              <textarea  id="desc" name="desc" class="input"></textarea>
+              <label for="desc">Message</label>
               <span>Message</span>
             </div>
             <input type="submit" value="Send" class="btn" />
@@ -94,20 +82,17 @@
     </div>
     
 
-   
+    {% endblock %} 
+
+    {% block js %}
+    <script>
+    {% if thank %}
+    alert('Thanks for contacting us. We will get back to You soon!');
+    
+    document.location = "/";
+    {% endif %}
+    </script>
+    {% endblock %} 
 
 
 
-
-
-
-
-
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    <script src="{% static 'js/contact.js' %}"></script>
-  </body>
-</html>
