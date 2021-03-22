@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+  }
+
+  section {
+      background-color: #fff;
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
+
+  h1 {
+      font-size: 2.5rem;
+      color: black;
+      text-align: center;
+      font-weight: 400;
+  }
+
+  .services {
+      height: 100%;
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+  }
+
+  .service-1 {
+      width: 320px;
+      background-color: #1abc9c;
+      padding: 15px;
+      margin: 35px;
+      border-radius: 10px;
+  }
+
+  .img {
+      padding-top: 30px;
+      
+  }
+
+  img {
+      height: 270px;
+      width: 170px;
+  }
+  .description {
+      padding-bottom: 30px;
+      text-align: center;
+      margin-top: 30px;
+  }
+  
+  h2 {
+      text-transform: uppercase;
+      color: brown;
+  }
+  p {
+      margin-top: 20px;
+      color: black;
+  }
+  .shapes {
+      position: relative;
+  }
+
+  .shape-1,
+  .shape-2,
+  .shape-3,
+  .shape-4,
+  .shape5,
+  .shape-6 {
+      width: 20px;
+      height: 40px;
+      border-radius: 35px;
+      position: absolute;
+  }
+
+  .right {
+      right: 0;
+
+  }
+
+  .shape-1 {
+      right: 40px;
+      background-color: #fffc;
+      top: -60px;
+      transition: all linear .5s;
+  }
+  .shape-2 {
+    right: 20px;
+    background-color: #1abc9c;
+    top: -10px;
+    transition: all linear .5s;
+}
+
+.shape-3 {
+    background-color: #fff;
+    top: -60px;
+    transition: all linear .5s;
+}
+
+.service-1:hover .shape-1 {
+    top: -30px;
+}
+.service-1:hover .shape-2 {
+    top: -30px;
+}
+.service-1:hover .shape-3 {
+    top: -40px;
+}
+
+.shape-4 {
+    background-color: #1abc9c;
+    top: -27px;
+    transition: all linear .5s;
+}
+.shape-5 {
+  background-color: #fff;
+  left: 20px;
+  top: 17px;
+  transition: all linear .5s;
+}
+
+.shape-6 {
+  background-color: #1abc9c;
+  left: 40px;
+  top: -27px;
+  transition: all linear .5s;
+}
+
+.service-1:hover .shape-4 {
+    top: -7px;
+}
+.service-1:hover .shape-5 {
+    top: 0;
+}
+.service-1:hover .shape-6 {
+    top: -15px;
+}
