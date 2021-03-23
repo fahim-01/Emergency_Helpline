@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/home.css' %}" />
     <link rel="stylesheet" href="{% static 'css/service.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/about.css' %}" />
     <script src="https://kit.fontawesome.com/64d58efce2.js"  crossorigin="anonymous"></script>
 
         <title>Emergency</title>
@@ -32,8 +33,8 @@
 
                     <ul class="nav__list">
                         <li class="nav__item"><a href="/" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="/" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="/" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="/about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#service" class="nav__link">Services</a></li>
                         <li class="nav__item"><a href="/contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -45,7 +46,7 @@
             <section class="home" id="home">
                 <div class="home__container bd-grid">
                     <div class="home__img">
-                        <!-- <img src='{% static "/media/images/corona.png" %}' alt="" data-speed="-2" class="move"> -->
+                        <img src='{% static "/media/images/corona.png" %}' alt="" data-speed="-2" class="move">
                     </div>
 
                     <div class="home__data">
@@ -58,7 +59,7 @@
         </main>
 
         <section>
-            <h1>Services</h1>
+            <h1><b>Services</b></h1>
             <div class="services">
             <div class="service-1">
                 <a href="/service"> 
@@ -130,7 +131,37 @@
             </div>
         </div>
         </section>
-        
+         <div class="about" style="text-align: center;">
+          <h2 style="color: black;"><b>About Us</b></h2>
+        <section class="about fullheight align-items-center" id="about">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-7 h-xs">
+                        <img src='{% static "/media/images/w2.jpg" %}' alt=""
+                            class="fullwidth left-to-right play-on-scroll">
+                    </div>
+                    <div class="col-5 col-xs-12 align-items-center">
+                        <div class="about-slogan right-to-left play-on-scroll">
+                            <h3>
+                                <span class="primary-color">We</span> create <span class="primary-color">delicious</span>
+                                memories for <span class="primary-color">you</span>
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus placeat et eos,
+                                dignissimos voluptatem tempora necessitatibus doloribus! Eum qui doloribus odio dolor
+                                tenetur nihil impedit vero magni, distinctio soluta!
+                            </p>
+                            <a href="/about" class="read"><b>Read More</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>

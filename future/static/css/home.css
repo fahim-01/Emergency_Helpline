@@ -138,6 +138,10 @@ img{
   row-gap: 1.5rem;
 }
 
+.move {
+  width: 302px;
+  height: 233px;
+}
 .home__img{
   position: relative;
   padding-top: 1.5rem;
