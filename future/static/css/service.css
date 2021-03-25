@@ -35,6 +35,8 @@
       border-radius: 10px;
   }
 
+
+
   .img {
       padding-top: 30px;
       
@@ -43,6 +45,7 @@
   img {
       height: 270px;
       width: 170px;
+     
   }
   .description {
       padding-bottom: 30px;
@@ -54,6 +57,7 @@
       text-transform: uppercase;
       color: brown;
   }
+  
   p {
       margin-top: 20px;
       color: black;
