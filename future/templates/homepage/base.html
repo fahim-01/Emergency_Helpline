@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="{% static 'css/home.css' %}" />
     <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
     <link rel="stylesheet" href="{% static 'css/service.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/post.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
+  
     <script src="https://kit.fontawesome.com/64d58efce2.js"  crossorigin="anonymous"></script>
     <title>{% block title%} {% endblock %}</title>
 
@@ -36,12 +39,63 @@
                   <li class="nav__item"><a href="/about" class="nav__link">About</a></li>
                   <li class="nav__item"><a href="/service" class="nav__link">Services</a></li>
                   <li class="nav__item"><a href="/contact" class="nav__link">Contact</a></li>
+                  <li class="nav__item"><a href="/post" class="nav__link">Post AD</a></li>
               </ul>
           </div>
       </nav>
   </header>
-    {% block body %} {% endblock %}
-   
+  
+    {% block body %}
+     {% endblock %}
+    <!--Footer Design-->
+    <footer class="footer-area">
+      <div class="footer-wave-box">
+          <div class="footer-wave footer-animation"></div>
+      </div>
+      <div class="main">
+          <div class="footer">
+              <div class="single-footer">
+                  <h4>about us</h4>
+                  <p>Lorem ipsum dolor sit amet, di dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Excepteur sint qui officia deserunt Excepteur.</p>
+                  <div class="footer-social">
+                      <a href="https://www.facebook.com/mdfahimur.rosid/"><i class="fab fa-facebook-f"></i></a>
+                      <a href=""><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.instagram.com/f_a_h_i_m_ur/"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/fahimur-rashid-9607031ba/"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+              <div class="single-footer">
+                  <h4>main menu</h4>
+                  <ul>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> home</a></li>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> about us</a></li>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> services</a></li>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> contact us</a></li>
+                  </ul>
+              </div>
+              <div class="single-footer">
+                  <h4>quick links</h4>
+                  <ul>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> privacy policy</a></li>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> terms & conditions</a></li>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> disclaimer</a></li>
+                  </ul>
+              </div>
+              <div class="single-footer">
+                  <h4>contact us</h4>
+                  <ul>
+                      <li><a href=""><i class="fas fa-map-marker-alt"></i>Zalalia Hot Box,Akhalia,Sylhet</a></li>
+                      <li><a href=""><i class="fas fa-mobile-alt"></i> +88 01778346462</a></li>
+                      <li><a href=""><i class="far fa-envelope"></i> fahim.sust.edu@gmail.com</a></li>
+                      <li><a href="http://travelsense.pythonanywhere.com/"><i class="fas fa-globe-europe"></i>travelsense.pythonanywhere.com</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="copy">
+              <p>&copy; Fahimur Rashid</p>
+          </div>
+      </div>
+  </footer>
    
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->

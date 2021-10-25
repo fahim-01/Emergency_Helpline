@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{% static 'css/service.css' %}" />
     <link rel="stylesheet" href="{% static 'css/about.css' %}" />
     <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/block.css' %}" />
     <script src="https://kit.fontawesome.com/64d58efce2.js"  crossorigin="anonymous"></script>
 
         <title>Emergency</title>
@@ -41,8 +42,11 @@
                         <li class="nav__item"><a href="/about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#service" class="nav__link">Services</a></li>
                         <li class="nav__item"><a href="/contact" class="nav__link">Contact</a></li>
+                        
                     </ul>
+                    
                 </div>
+                <li class="nav__item"><a href="/post" class="nav__link" style="font-size: larger"><b>Post AD</b></a></li>
             </nav>
         </header>
 
@@ -51,7 +55,7 @@
             <section class="home" id="home">
                 <div class="home__container bd-grid">
                     <div class="home__img">
-                        <img src='{% static "/media/images/corona.png" %}' alt="" data-speed="-2" class="move">
+                        <!-- <img src='{% static "/media/images/corona.png" %}' alt="" data-speed="-2" class="move"> -->
                     </div>
 
                     <div class="home__data">
@@ -153,7 +157,7 @@
                 </div>
                 <div class="description">
                     <h2> Medical</h2>
-                    <p>pppppppppppppdsssssssssd dS9FOnJ0 lkdjlkfdl fl kdlfope </p>
+                    <p>pppppppppppppdsssssssssd dS9FOnJ0 lkdjlkfdl fl kdlfope</p>
                 </div>
                 <div class="shapes">
                     <div class="shape-4"></div>
@@ -167,49 +171,67 @@
         </section>
        
 
-
- 
-
-
-
-
-    
-            <!-- Day life Block -->
-            
-            <div class="daily-life-content">
-                <h2 style="text-align: center;">We’ve got you covered</h2>
-                <h5 style="text-align: center;">Live easy, Live stress-free</h5>
-            </div>
-                <div class="services" style="margin-bottom: 70px;">
-                 
-                          
-                        
-                            <h5> Rush To Work</h5>
-                            <div class="img">
-                                <img src='{% static "/media/images/ride.svg" %}' alt="Shohoz Ride">
-                            </div>
-                       
-                            <h5>Midday Meal</h5>
-                            <div class="img">
-                                <img src='{% static "/media/images/foods.svg" %}'alt="Shohoz Food">
-                            </div>
-                    
-                    
-                            <h5>Out of City Travel</h5>
-                            <div class="img">
-                                <img src='{% static "/media/images/ride2.svg" %}' alt="Shohoz Bus">
-                            </div>
-                            <h5>Medical</h5>
-                            <div class="img">
-                                <img src='{% static "/media/images/service1.svg" %}' alt="Shohoz Bus">
-                            </div>
-                        
-        
-                </div>
-            
-            <!-- Day life Block -->
       
-       
+            <div class="site-wrapper clearfix">
+                <!-- Day life Block -->
+                <div class="daily-life-block clearfix">
+                    <div class="daily-life-content">
+                        <h2>We’ve got you covered</h2>
+                        <h5>Live easy, Live stress-free</h5>
+                    </div>
+                    <div class="daily-life">
+                        <ul>
+                            <li class="active">
+                                <h5>Morning</h5>
+                                <div class="icon-round">
+                                    <img src='{% static "/media/images/foods.svg" %}' alt="">
+                                </div>
+                                Easy Food                    </li>
+            
+                            <li>
+                                <h5> Go To Work</h5>
+                                <div class="icon-round">
+                                    <img src='{% static "/media/images/ride2.svg" %}' alt="">
+                                </div>
+                               Easy Ride                    </li>
+            
+                            <li class="mve1">
+                                <h5>Medical service</h5>
+                                <div class="icon-round">
+                                    <img src='{% static "/media/images/service1.svg" %}' alt="">
+                                </div>
+                                Daily Food                    </li>
+            
+                            <li class="mve2">
+                                <h5>Back To Home</h5>
+                                <div class="icon-round">
+                                    <img src='{% static "/media/images/ride.svg" %}' alt="">
+                                </div>
+                                Emergency Ride                    </li>
+            
+                            <li>
+                                <h5>Weekend Fun</h5>
+                                <div class="icon-round">
+                                    <img src="https://www.shohoz.com/v2/assets/img/icon/shohoz-movie.svg" alt="">
+                                </div>
+                                Amusement                  </li>
+            
+                            <li>
+                                <h5>Out of City Travel</h5>
+                                <div class="icon-round">
+                                    <img src="https://www.shohoz.com/v2/assets/img/icon/shohoz-bus.svg" alt="">
+                                </div>
+                                Emergency Ticket                   </li>
+            
+                        </ul>
+                    </div>
+                </div>
+                <!-- Day life Block -->
+            </div>
+
+
+
+
   
     <a href="#home" class=".back-to-top">
         <i class="bx bxs-to-top"></i>
@@ -260,7 +282,7 @@
                 </div>
             </div>
             <div class="copy">
-                <p>&copy; 2020 all rights reserved</p>
+                <p>&copy; Fahimur Rashid</p>
             </div>
         </div>
     </footer>

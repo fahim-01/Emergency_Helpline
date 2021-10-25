@@ -1,0 +1,98 @@
+{% extends 'homepage/base.html' %}
+{% block title %} Contact US {% endblock %} 
+{% block body %} 
+{% load static %}
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src='{% static "/media/images/shape.png" %}' class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Amar licchu bhalo lage nah!
+            Pot kora dorkar!!
+            ei obelay kew chahe nah.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <!-- <img src='{% static "/media/images/pin.png" %}' class="icon" alt="" /> -->
+              <p>2B Jalalia Box,Akhalia surma,Sylhet.</p>
+            </div>
+            <div class="information">
+              <!-- <img src='{% static "/media/images/gmail.png" %}' class="icon" alt="" /> -->
+              <p>fahim.sust.edu@gmail.com</p>
+            </div>
+            <div class="information">
+              <!-- <img src='{% static "/media/images/phone.png" %}'class="icon" alt="" /> -->
+              <p>+880 1778346462</p>
+            </div>
+          </div>
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/mdfahimur.rosid/">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/f_a_h_i_m_ur/">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/fahimur-rashid-9607031ba/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle 1"></span>
+          <span class="circle 2"></span>
+
+
+          <form action="/post/" method="POST"> {% csrf_token %}
+            <h3 class="title">Product AD</h3>
+            <div class="custom_select">
+         <select>
+           <option value="">Category</option>
+           <option value="male">Male</option>
+           <option value="female">Female</option>
+         </select>
+       </div>
+       <div class="input-container">
+            <div class="input-container">
+              <input type="text" id="productname" name="productname" class="input" required/>
+              <label for="">Product Name</label>
+              <span>Product Name</span>
+            </div>
+            <div class="input-container">
+              <input type="price" id="price" name="price" class="input" required/>
+              <label for="">Price</label>
+              <span>Price</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea  id="desc" name="desc" class="input"required></textarea>
+              <label for="desc">Description</label>
+              <span>Description</span>
+            </div>
+            <h3 class="title">Add Photos</h3>
+            <input type="file" id="file" accept="image/*">
+            
+          </div>
+          
+          <input type="submit" value="Send" class="btn" />
+          </form>
+         
+        </div>
+        
+      </div>
+      
+    </div>
+    
+
+    {% endblock %} 
+
+
+

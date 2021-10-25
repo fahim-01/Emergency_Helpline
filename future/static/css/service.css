@@ -5,6 +5,8 @@
     font-family:'Montserrat', sans-serif;
   }
 
+
+
   section {
       background-color: #fff;
       padding-top: 80px;
@@ -140,3 +142,6 @@
 .service-1:hover .shape-6 {
     top: -15px;
 }
+
+
+

@@ -24,3 +24,5 @@ def contact(request):
 
 def about(request):
     return  render(request, 'homepage/about.html')
+def post(request):
+    return  render(request, 'homepage/post.html')
