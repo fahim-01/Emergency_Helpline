@@ -1,5 +1,5 @@
 #from django.http import HttpResponse
-from django.shortcuts  import render
+from django.shortcuts  import render,HttpResponse,redirect
 from .models import Contact
 # Create your views here.
 def index(request):
@@ -26,3 +26,6 @@ def about(request):
     return  render(request, 'homepage/about.html')
 def post(request):
     return  render(request, 'homepage/post.html')
+
+def signup(request):
+    return  render(request, 'homepage/signup.html')

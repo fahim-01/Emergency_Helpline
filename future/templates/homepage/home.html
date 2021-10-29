@@ -10,67 +10,175 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/signin.css' %}" />
     <link rel="stylesheet" href="{% static 'css/home.css' %}" />
     <link rel="stylesheet" href="{% static 'css/service.css' %}" />
     <link rel="stylesheet" href="{% static 'css/about.css' %}" />
     <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
+    
     <link rel="stylesheet" href="{% static 'css/block.css' %}" />
     <script src="https://kit.fontawesome.com/64d58efce2.js"  crossorigin="anonymous"></script>
 
         <title>Emergency</title>
     </head>
     <body>
-        
-        <header class="l-header">
-            
+         <header class="l-header">     
             <nav class="nav bd-grid">
                 <div>
                     <a href="/" class="nav__logo">Emergency</a>
-                </div>
-                
+                </div> 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
-
                 <div class="nav__menu" id="nav-menu">
                     <div class="nav__close" id="nav-close">
                         <i class='bx bx-x'></i>
                     </div>
-
                     <ul class="nav__list">
                         <li class="nav__item"><a href="/" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="/about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#service" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="/contact" class="nav__link">Contact</a></li>
-                        
-                    </ul>
-                    
+                        <li class="nav__item"><a href="/contact" class="nav__link">Contact</a></li>     
+                    </ul> 
                 </div>
-                <li class="nav__item"><a href="/post" class="nav__link" style="font-size: larger"><b>Post AD</b></a></li>
+                <li class="nav__item"><a href="/post" class="nav__link" style="font-size: larger"><b>Post AD</b></a></li> 
             </nav>
         </header>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <div class="home__img">
-                        <!-- <img src='{% static "/media/images/corona.png" %}' alt="" data-speed="-2" class="move"> -->
-                    </div>
 
-                    <div class="home__data">
-                        <h1 class="home__title">COVID 19</h1>
-                        <p class="home__description">Let's help discover the best Services <br> of the week.</p>
-                        <a href="/" class="home__button">Get Started</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <div class="about" style="text-align: center;">
-            <h2 style="color: black;"><b>About Us</b></h2>
+        
+ <!-- Landing page-->
+        <main class="l-main">
+         
+	<div id="container" class="container">
+	
+		<div class="row">
+	
+			<div class="col align-items-center flex-col sign-up">
+				<div class="form-wrapper align-items-center">
+					<div class="form sign-up">
+						<div class="input-group">
+							<i class='bx bxs-user'></i>
+							<input type="text" placeholder="Username">
+						</div>
+						<div class="input-group">
+							<i class='bx bx-mail-send'></i>
+							<input type="email" placeholder="Email">
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" placeholder="Password">
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" placeholder="Confirm password">
+						</div>
+						<button>
+							Sign up
+						</button>
+						<p>
+							<span>
+								Already have an account?
+							</span>
+							<b onclick="toggle()" class="pointer">
+								Sign in here
+							</b>
+						</p>
+					</div>
+				</div>
+				
+			</div>
+		
+			<div class="col align-items-center flex-col sign-in">
+				<div class="form-wrapper align-items-center">
+					<div class="form sign-in">
+						<div class="input-group">
+							<i class='bx bxs-user'></i>
+							<input type="text" placeholder="Username">
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" placeholder="Password">
+						</div>
+						<button>
+							Sign in
+						</button>
+						<p>
+							<b>
+								Forgot password?
+							</b>
+						</p>
+						<p>
+							<span>
+								Don't have an account?
+							</span>
+							<b onclick="toggle()" class="pointer">
+								Sign up here
+							</b>
+						</p>
+					</div>
+				</div>
+				
+			</div>
+	
+		</div>
+	
+		<div class="row content-row">
+
+			<div class="col align-items-center flex-col">
+				<div class="text sign-in">
+					<h2>
+						Welcome back
+					</h2>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit obcaecati, accusantium
+						molestias, laborum, aspernatur deserunt officia voluptatum tempora dicta quo ab ullam. Assumenda
+						enim harum minima possimus dignissimos deserunt rem.
+					</p>
+				</div>
+				<div class="img sign-in">
+          <img  src='{% static "/media/images//undraw_different_love_a3rg.svg" %}' alt="welcome">
+					
+				</div>
+			</div>
+			
+			<div class="col align-items-center flex-col">
+				<div class="img sign-up">
+          <img  src='{% static "/media/images/undraw_creative_team_r90h.svg" %}' alt="welcome">
+				
+				</div>
+				<div class="text sign-up">
+					<h2>
+						Join with us
+					</h2>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit obcaecati, accusantium
+						molestias, laborum, aspernatur deserunt officia voluptatum tempora dicta quo ab ullam. Assumenda
+						enim harum minima possimus dignissimos deserunt rem.
+					</p>
+				</div>
+			</div>
+		
+		</div>
+		
+	</div>
+    
+ </main>
+
+
+
+
+
+
+
+
+
+        <!--About-->>
+        <div class="about" style="text-align: center; padding-top:  10vh;">
+            <h2 style="color: #1abc9c;"><b>About Us</b></h2>
           <section class="about fullheight align-items-center" id="about">
               
-              <div class="container">
+              <div class="container-2" style="width: 1124px;">
                   <div class="row">
                       <div class="col-7 h-xs">
                           <img src='{% static "/media/images/w2.jpg" %}' alt=""
@@ -84,7 +192,6 @@
                               </h3>
                               <p>
                                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus placeat et eos,
-                                  dignissimos voluptatem tempora necessitatibus doloribus! Eum qui doloribus odio dolor
                                   tenetur nihil impedit vero magni, distinctio soluta!
                               </p>
                               <a href="/about" class="read"><b>Read More</b></a>
@@ -96,8 +203,12 @@
       </div>
 
 
+
+
+<!--Service Section-->
+
         <section>
-            <h1><b>Services</b></h1>
+            <h2 style="color: #1abc9c; text-align: center;"><b>Services</b></h2>
             <div class="services">
             <div class="service-1">
                 <a href="/service"> 
@@ -226,7 +337,7 @@
                         </ul>
                     </div>
                 </div>
-                <!-- Day life Block -->
+        
             </div>
 
 
@@ -295,6 +406,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
         <script src="{% static 'js/home.js' %}"></script>
         <script src="{% static 'js/contact.js' %}"></script>
+        <script src="{% static 'js/signin.js' %}"></script>
         {% block js %} {% endblock %}
         
 
